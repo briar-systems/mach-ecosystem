@@ -99,6 +99,7 @@ _Engines, physics, and game tooling._
 
 - [boom](https://github.com/briar-systems/boom) - 2D-first, 3D-capable game engine.
 - [mach-phys](https://github.com/briar-systems/mach-phys) - Pure Mach 2D and 3D physics.
+- [mach-raylib](https://github.com/Angluca/mach-raylib) - Mach bindings for Raylib.
 
 ## Examples
 

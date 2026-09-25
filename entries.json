@@ -254,6 +254,13 @@
       "category": "games"
     },
     {
+      "id": "mach-raylib",
+      "name": "mach-raylib",
+      "url": "https://github.com/Angluca/mach-raylib",
+      "description": "Mach bindings for Raylib.",
+      "category": "games"
+    },
+    {
       "id": "mach-sieve",
       "name": "mach-sieve",
       "url": "https://github.com/briar-systems/mach-sieve",
