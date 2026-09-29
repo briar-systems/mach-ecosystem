@@ -1,0 +1,6 @@
+{
+  "name": "machete",
+  "url": "https://github.com/NickDrohan/machete",
+  "description": "UCI chess engine with a neural-network evaluation, named for what it does to a variation tree.",
+  "category": "apps"
+}

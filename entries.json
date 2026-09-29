@@ -47,8 +47,18 @@
     },
     {
       "id": "games",
-      "title": "Games and simulation",
-      "description": "Engines, physics, and game tooling."
+      "title": "Game Dev",
+      "description": "Engines, frameworks, and game tooling."
+    },
+    {
+      "id": "simulation",
+      "title": "Simulation",
+      "description": "Physics and other simulation."
+    },
+    {
+      "id": "apps",
+      "title": "Applications",
+      "description": "Programs written in Mach."
     },
     {
       "id": "examples",
@@ -247,18 +257,25 @@
       "category": "games"
     },
     {
-      "id": "mach-phys",
-      "name": "mach-phys",
-      "url": "https://github.com/briar-systems/mach-phys",
-      "description": "Pure Mach 2D and 3D physics.",
-      "category": "games"
-    },
-    {
       "id": "mach-raylib",
       "name": "mach-raylib",
       "url": "https://github.com/Angluca/mach-raylib",
       "description": "Mach bindings for Raylib.",
       "category": "games"
+    },
+    {
+      "id": "mach-phys",
+      "name": "mach-phys",
+      "url": "https://github.com/briar-systems/mach-phys",
+      "description": "Pure Mach 2D and 3D physics.",
+      "category": "simulation"
+    },
+    {
+      "id": "machete",
+      "name": "machete",
+      "url": "https://github.com/NickDrohan/machete",
+      "description": "UCI chess engine with a neural-network evaluation, named for what it does to a variation tree.",
+      "category": "apps"
     },
     {
       "id": "mach-sieve",
