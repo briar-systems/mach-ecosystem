@@ -19,7 +19,7 @@ Browse it with search, sorting, and project details at [machlang.org/ecosystem](
 - [Graphics](#graphics)
 - [Media and assets](#media-and-assets)
 - [GUI](#gui)
-- [Game development](#game-development)
+- [Game Dev](#game-dev)
 - [Simulation](#simulation)
 - [Applications](#applications)
 - [Examples](#examples)
@@ -95,7 +95,7 @@ _User interface libraries._
 
 - [blit](https://github.com/briar-systems/blit) - Immediate-mode GUI library.
 
-## Game development
+## Game Dev
 
 _Engines, frameworks, and game tooling._
 
