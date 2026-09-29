@@ -271,6 +271,13 @@
       "category": "simulation"
     },
     {
+      "id": "cellar",
+      "name": "cellar",
+      "url": "https://github.com/octalide/cellar",
+      "description": "Interactive cellular-automata editor and visualizer with weighted outer-totalistic kernels of any radius, multiple colour modes, and pattern saving.",
+      "category": "apps"
+    },
+    {
       "id": "machete",
       "name": "machete",
       "url": "https://github.com/NickDrohan/machete",
