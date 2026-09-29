@@ -47,8 +47,18 @@
     },
     {
       "id": "games",
-      "title": "Games and simulation",
-      "description": "Engines, physics, and game tooling."
+      "title": "Game development",
+      "description": "Engines, frameworks, and game tooling."
+    },
+    {
+      "id": "simulation",
+      "title": "Simulation",
+      "description": "Physics and other simulation."
+    },
+    {
+      "id": "apps",
+      "title": "Applications",
+      "description": "Programs written in Mach."
     },
     {
       "id": "examples",

@@ -19,7 +19,9 @@ Browse it with search, sorting, and project details at [machlang.org/ecosystem](
 - [Graphics](#graphics)
 - [Media and assets](#media-and-assets)
 - [GUI](#gui)
-- [Games and simulation](#games-and-simulation)
+- [Game development](#game-development)
+- [Simulation](#simulation)
+- [Applications](#applications)
 - [Examples](#examples)
 
 ## Language
@@ -93,13 +95,24 @@ _User interface libraries._
 
 - [blit](https://github.com/briar-systems/blit) - Immediate-mode GUI library.
 
-## Games and simulation
+## Game development
 
-_Engines, physics, and game tooling._
+_Engines, frameworks, and game tooling._
 
 - [boom](https://github.com/briar-systems/boom) - 2D-first, 3D-capable game engine.
-- [mach-phys](https://github.com/briar-systems/mach-phys) - Pure Mach 2D and 3D physics.
 - [mach-raylib](https://github.com/Angluca/mach-raylib) - Mach bindings for Raylib.
+
+## Simulation
+
+_Physics and other simulation._
+
+- [mach-phys](https://github.com/briar-systems/mach-phys) - Pure Mach 2D and 3D physics.
+
+## Applications
+
+_Programs written in Mach._
+
+- [machete](https://github.com/NickDrohan/machete) - UCI chess engine with a neural-network evaluation, named for what it does to a variation tree.
 
 ## Examples
 
