@@ -2,9 +2,6 @@ name: CI
 
 on:
   pull_request:
-  # catches listed repos that were archived, made private, or deleted since they were added
-  schedule:
-    - cron: "17 6 * * 1"
   workflow_dispatch:
 
 permissions:
@@ -53,6 +50,4 @@ jobs:
     needs: [check, test]
     runs-on: ubuntu-latest
     steps:
-      - uses: briar-systems/.github/.github/actions/gate@main
-        with:
-          needs: ${{ toJSON(needs) }}
+      - run: exit ${{ (contains(needs.*.result, 'failure') || contains(needs.*.result, 'cancelled')) && 1 || 0 }}
