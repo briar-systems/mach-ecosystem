@@ -60,8 +60,6 @@ _Protocols and transports._
 
 - [mach-acme](https://github.com/briar-systems/mach-acme) - Lightweight ACME client.
 - [mach-http](https://github.com/briar-systems/mach-http) - Lightweight HTTP protocol engines.
-- [mach-mdns](https://github.com/briar-systems/mach-mdns) - mDNS and DNS-SD (RFC 6762 and 6763) library.
-- [mach-mqtt](https://github.com/briar-systems/mach-mqtt) - MQTT 3.1.1 protocol library and broker.
 - [mach-quic](https://github.com/briar-systems/mach-quic) - Lightweight QUIC transport.
 - [mach-tls](https://github.com/briar-systems/mach-tls) - Lightweight TLS.
 
@@ -70,6 +68,7 @@ _Protocols and transports._
 _Cryptographic primitives and protocols._
 
 - [mach-crypto](https://github.com/briar-systems/mach-crypto) - Lightweight cryptographic primitives.
+- [mach-pki](https://github.com/briar-systems/mach-pki) - X.509 certificates, CMS signed data, and PKI message formats.
 
 ## Graphics
 
