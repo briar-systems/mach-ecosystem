@@ -61,6 +61,10 @@ class LoadTest(Fixture):
         self.entry("thing.json", {**GOOD, "url": "http://example.com"})
         self.assertEqual(len(self.problems()), 1)
 
+    def test_rejects_archived_false(self):
+        self.entry("thing.json", {**GOOD, "archived": False})
+        self.assertEqual(len(self.problems()), 1)
+
     def test_rejects_unknown_category(self):
         self.entry("thing.json", {**GOOD, "category": "nope"})
         self.assertIn("unknown category 'nope'", self.problems()[0])
@@ -90,6 +94,21 @@ class BuildTest(Fixture):
         self.assertIn("- [a](https://github.com/someone/thing) - Does a thing.", readme)
         self.assertNotIn("{{", readme)
 
+    def test_lists_archived_entries_in_their_own_section(self):
+        self.entry("a.json", {**GOOD, "name": "a", "category": "web"})
+        self.entry("old.json", {**GOOD, "name": "old", "category": "web", "archived": True})
+        out = self.root / "out"
+        out.mkdir()
+        self.assertEqual(build.build(self.root, out), 2)
+        readme = (out / "README.md").read_text()
+        self.assertIn("- [Archived](#archived)", readme)
+        web, archived = readme.split("## Web")[1].split("## Archived")
+        self.assertIn("- [a]", web)
+        self.assertNotIn("- [old]", web)
+        self.assertIn("- [old]", archived)
+        data = json.loads((out / "entries.json").read_text())
+        self.assertTrue(next(e for e in data["entries"] if e["id"] == "old")["archived"])
+
     def test_refuses_to_build_with_problems(self):
         self.entry("thing.json", {**GOOD, "category": "nope"})
         with self.assertRaises(SystemExit):
@@ -102,9 +121,23 @@ class UrlTest(unittest.TestCase):
         res.__enter__.return_value.read.return_value = json.dumps(fields).encode()
         return res
 
-    def test_github_archived(self):
+    def test_github_archived_unmarked(self):
         with mock.patch.object(check, "request", return_value=self.meta(private=False, archived=True)):
-            self.assertEqual(check.url_problem("https://github.com/a/b", None), "repository is archived")
+            self.assertEqual(
+                check.url_problem("https://github.com/a/b", None),
+                'repository is archived, mark the entry "archived": true',
+            )
+
+    def test_github_archived_marked(self):
+        with mock.patch.object(check, "request", return_value=self.meta(private=False, archived=True)):
+            self.assertIsNone(check.url_problem("https://github.com/a/b", None, archived=True))
+
+    def test_github_marked_but_live(self):
+        with mock.patch.object(check, "request", return_value=self.meta(private=False, archived=False)):
+            self.assertEqual(
+                check.url_problem("https://github.com/a/b", None, archived=True),
+                "entry is marked archived but the repository is not",
+            )
 
     def test_github_private(self):
         with mock.patch.object(check, "request", return_value=self.meta(private=True, archived=False)):

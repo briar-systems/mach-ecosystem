@@ -14,10 +14,15 @@ def anchor(title):
     return "".join(c for c in title.lower().replace(" ", "-") if c.isalnum() or c == "-")
 
 
+ARCHIVED = {"title": "Archived", "description": "Projects no longer maintained, kept for the record."}
+
+
 def render_list(categories, entries):
+    live = [e for e in entries if not e.get("archived")]
+    groups = [(c, [e for e in live if e["category"] == c["id"]]) for c in categories]
+    groups.append((ARCHIVED, [e for e in entries if e.get("archived")]))
     toc, sections = [], []
-    for c in categories:
-        members = [e for e in entries if e["category"] == c["id"]]
+    for c, members in groups:
         if not members:
             continue
         toc.append(f"- [{c['title']}](#{anchor(c['title'])})")
