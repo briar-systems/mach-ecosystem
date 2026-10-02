@@ -1,0 +1,6 @@
+{
+  "name": "mach-pki",
+  "url": "https://github.com/briar-systems/mach-pki",
+  "description": "X.509 certificates, CMS signed data, and PKI message formats.",
+  "category": "crypto"
+}
