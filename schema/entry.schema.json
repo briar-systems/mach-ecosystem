@@ -30,6 +30,10 @@
       "description": "the id of a category in categories.json",
       "type": "string",
       "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "archived": {
+      "description": "the project is archived. it stays listed, in the archived section. omit it otherwise",
+      "const": true
     }
   }
 }

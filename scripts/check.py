@@ -1,5 +1,6 @@
 """checks every entry against the schema and categories, then that each url is
-live. github repos must also be public and not archived. exits 1 on any problem.
+live. github repos must also be public, and archived exactly when the entry says
+so. exits 1 on any problem.
 
 usage: check.py [--offline]
 """
@@ -19,7 +20,7 @@ def request(url, method="GET", headers=None):
     return urllib.request.urlopen(req, timeout=20)
 
 
-def github_problem(owner, repo, token):
+def github_problem(owner, repo, token, archived):
     headers = {"Accept": "application/vnd.github+json"}
     if token:
         headers["Authorization"] = f"Bearer {token}"
@@ -30,8 +31,10 @@ def github_problem(owner, repo, token):
         return "repository not found or not public" if e.code == 404 else f"github api returned {e.code}"
     if meta.get("private"):
         return "repository is private"
-    if meta.get("archived"):
-        return "repository is archived"
+    if meta.get("archived") and not archived:
+        return 'repository is archived, mark the entry "archived": true'
+    if archived and not meta.get("archived"):
+        return "entry is marked archived but the repository is not"
     return None
 
 
@@ -48,9 +51,9 @@ def web_problem(url):
     return last
 
 
-def url_problem(url, token):
+def url_problem(url, token, archived=False):
     m = listing.GITHUB_REPO.match(url)
-    return github_problem(m.group(1), m.group(2), token) if m else web_problem(url)
+    return github_problem(m.group(1), m.group(2), token, archived) if m else web_problem(url)
 
 
 def main(argv):
@@ -58,7 +61,7 @@ def main(argv):
     if "--offline" not in argv:
         token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
         for e in entries:
-            p = url_problem(e["url"], token)
+            p = url_problem(e["url"], token, e.get("archived", False))
             if p:
                 problems.append(f"entries/{e['id']}.json: {e['url']}: {p}")
     for p in problems:
