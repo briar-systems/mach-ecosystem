@@ -23,6 +23,7 @@ Browse it with search, sorting, and project details at [machlang.org/ecosystem](
 - [Simulation](#simulation)
 - [Applications](#applications)
 - [Examples](#examples)
+- [Archived](#archived)
 
 ## Language
 
@@ -119,6 +120,13 @@ _Programs written in Mach._
 _Small projects that show how Mach is written._
 
 - [mach-sieve](https://github.com/briar-systems/mach-sieve) - Sieve of Eratosthenes showing the intended layout of a Mach project and its dependencies.
+
+## Archived
+
+_Projects no longer maintained, kept for the record._
+
+- [mach-mdns](https://github.com/briar-systems/mach-mdns) - mDNS and DNS-SD (RFC 6762 and 6763) library.
+- [mach-mqtt](https://github.com/briar-systems/mach-mqtt) - MQTT 3.1.1 protocol library and broker.
 
 ## Contributing
 

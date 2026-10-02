@@ -152,6 +152,22 @@
       "category": "networking"
     },
     {
+      "id": "mach-mdns",
+      "name": "mach-mdns",
+      "url": "https://github.com/briar-systems/mach-mdns",
+      "description": "mDNS and DNS-SD (RFC 6762 and 6763) library.",
+      "category": "networking",
+      "archived": true
+    },
+    {
+      "id": "mach-mqtt",
+      "name": "mach-mqtt",
+      "url": "https://github.com/briar-systems/mach-mqtt",
+      "description": "MQTT 3.1.1 protocol library and broker.",
+      "category": "networking",
+      "archived": true
+    },
+    {
       "id": "mach-quic",
       "name": "mach-quic",
       "url": "https://github.com/briar-systems/mach-quic",
