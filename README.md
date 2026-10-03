@@ -82,12 +82,13 @@ _GPU APIs, windowing, and shaders._
 
 ## Media and assets
 
-_Images, fonts, models, and audio._
+_Images, fonts, documents, models, and audio._
 
 - [mach-audio](https://github.com/briar-systems/mach-audio) - Audio with a minimal device-layer binding and pure Mach mixing and DSP.
 - [mach-font](https://github.com/briar-systems/mach-font) - Pure Mach TrueType parsing and rasterization.
 - [mach-gltf](https://github.com/briar-systems/mach-gltf) - Pure Mach glTF 2.0 loader.
 - [mach-image](https://github.com/briar-systems/mach-image) - Pure Mach image decoding and encoding.
+- [mach-pdf](https://github.com/briar-systems/mach-pdf) - PDF writing, reading, forms, signatures and PDF/A.
 
 ## GUI
 

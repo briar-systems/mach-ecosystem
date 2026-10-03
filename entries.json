@@ -38,7 +38,7 @@
     {
       "id": "media",
       "title": "Media and assets",
-      "description": "Images, fonts, models, and audio."
+      "description": "Images, fonts, documents, models, and audio."
     },
     {
       "id": "gui",
@@ -249,6 +249,13 @@
       "name": "mach-image",
       "url": "https://github.com/briar-systems/mach-image",
       "description": "Pure Mach image decoding and encoding.",
+      "category": "media"
+    },
+    {
+      "id": "mach-pdf",
+      "name": "mach-pdf",
+      "url": "https://github.com/briar-systems/mach-pdf",
+      "description": "PDF writing, reading, forms, signatures and PDF/A.",
       "category": "media"
     },
     {
