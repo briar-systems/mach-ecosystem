@@ -301,6 +301,13 @@
       "category": "apps"
     },
     {
+      "id": "doomach",
+      "name": "DOOMACH",
+      "url": "https://github.com/NickDrohan/DOOMACH",
+      "description": "Port of the Doom engine and its shareware episode, with lockstep co-op and deathmatch over a relay, an OPL2 music synthesizer, and neural-network bots.",
+      "category": "apps"
+    },
+    {
       "id": "machete",
       "name": "machete",
       "url": "https://github.com/NickDrohan/machete",

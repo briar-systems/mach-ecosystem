@@ -115,6 +115,7 @@ _Physics and other simulation._
 _Programs written in Mach._
 
 - [cellar](https://github.com/octalide/cellar) - Interactive cellular-automata editor and visualizer with weighted outer-totalistic kernels of any radius, multiple colour modes, and pattern saving.
+- [DOOMACH](https://github.com/NickDrohan/DOOMACH) - Port of the Doom engine and its shareware episode, with lockstep co-op and deathmatch over a relay, an OPL2 music synthesizer, and neural-network bots.
 - [machete](https://github.com/NickDrohan/machete) - UCI chess engine with a neural-network evaluation, named for what it does to a variation tree.
 
 ## Examples
