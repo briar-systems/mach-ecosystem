@@ -1,0 +1,6 @@
+{
+  "name": "mach-sdl",
+  "url": "https://github.com/Wmakes/mach-sdl",
+  "description": "SDL3 (and SDL3_ttf, SDL3_image and SDL3_mixer) bindings for Mach ",
+  "category": "games"
+}
