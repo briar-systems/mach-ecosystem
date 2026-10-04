@@ -102,6 +102,7 @@ _Engines, frameworks, and game tooling._
 
 - [boom](https://github.com/briar-systems/boom) - 2D-first, 3D-capable game engine.
 - [mach-raylib](https://github.com/Angluca/mach-raylib) - Mach bindings for Raylib.
+- [mach-sdl](https://github.com/Wmakes/mach-sdl) - SDL3 bindings, with SDL3_ttf, SDL3_image and SDL3_mixer.
 
 ## Simulation
 

@@ -280,6 +280,13 @@
       "category": "games"
     },
     {
+      "id": "mach-sdl",
+      "name": "mach-sdl",
+      "url": "https://github.com/Wmakes/mach-sdl",
+      "description": "SDL3 bindings, with SDL3_ttf, SDL3_image and SDL3_mixer.",
+      "category": "games"
+    },
+    {
       "id": "mach-phys",
       "name": "mach-phys",
       "url": "https://github.com/briar-systems/mach-phys",
