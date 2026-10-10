@@ -1,6 +1,6 @@
 {
   "name": "Ramjet",
   "url": "https://github.com/Wmakes/Ramjet",
-  "description": "A fast, clean-room RAR-compatible archiver written in Mach.",
+  "description": "Clean-room RAR-compatible archiver.",
   "category": "apps"
 }
