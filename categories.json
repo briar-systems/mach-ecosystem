@@ -58,7 +58,7 @@
     {
       "id": "systems",
       "title": "Operating systems",
-      "description": "Operating systems, kernels, and other low-level systems."
+      "description": "Operating systems, kernels, and bootloaders."
     },
     {
       "id": "apps",
@@ -70,6 +70,5 @@
       "title": "Examples",
       "description": "Small projects that show how Mach is written."
     }
-    
   ]
 }
