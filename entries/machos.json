@@ -1,6 +1,6 @@
 {
   "name": "Machos",
   "url": "https://github.com/Wmakes/MachOS",
-  "description": "A Unix-like operating system with its own bootloader, kernel, and userland",
+  "description": "A Unix-like operating system with its own bootloader, kernel, and userland.",
   "category": "systems"
 }
