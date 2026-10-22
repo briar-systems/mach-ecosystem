@@ -56,6 +56,11 @@
       "description": "Physics and other simulation."
     },
     {
+      "id": "systems",
+      "title": "Operating systems",
+      "description": "Operating systems, kernels, and other low-level systems."
+    },
+    {
       "id": "apps",
       "title": "Applications",
       "description": "Programs written in Mach."
@@ -65,5 +70,6 @@
       "title": "Examples",
       "description": "Small projects that show how Mach is written."
     }
+    
   ]
 }
