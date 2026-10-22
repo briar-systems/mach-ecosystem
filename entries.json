@@ -56,6 +56,11 @@
       "description": "Physics and other simulation."
     },
     {
+      "id": "systems",
+      "title": "Operating systems",
+      "description": "Operating systems, kernels, and bootloaders."
+    },
+    {
       "id": "apps",
       "title": "Applications",
       "description": "Programs written in Mach."
@@ -292,6 +297,13 @@
       "url": "https://github.com/briar-systems/mach-phys",
       "description": "Pure Mach 2D and 3D physics.",
       "category": "simulation"
+    },
+    {
+      "id": "machos",
+      "name": "MachOS",
+      "url": "https://github.com/Wmakes/MachOS",
+      "description": "Unix-like operating system for x86_64 with its own bootloader, kernel, and userland.",
+      "category": "systems"
     },
     {
       "id": "cellar",

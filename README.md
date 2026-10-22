@@ -21,6 +21,7 @@ Browse it with search, sorting, and project details at [machlang.org/ecosystem](
 - [GUI](#gui)
 - [Game Dev](#game-dev)
 - [Simulation](#simulation)
+- [Operating systems](#operating-systems)
 - [Applications](#applications)
 - [Examples](#examples)
 - [Archived](#archived)
@@ -109,6 +110,12 @@ _Engines, frameworks, and game tooling._
 _Physics and other simulation._
 
 - [mach-phys](https://github.com/briar-systems/mach-phys) - Pure Mach 2D and 3D physics.
+
+## Operating systems
+
+_Operating systems, kernels, and bootloaders._
+
+- [MachOS](https://github.com/Wmakes/MachOS) - Unix-like operating system for x86_64 with its own bootloader, kernel, and userland.
 
 ## Applications
 
