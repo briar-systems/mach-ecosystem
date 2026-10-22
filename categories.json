@@ -56,6 +56,11 @@
       "description": "Physics and other simulation."
     },
     {
+      "id": "systems",
+      "title": "Operating systems",
+      "description": "Operating systems, kernels, and bootloaders."
+    },
+    {
       "id": "apps",
       "title": "Applications",
       "description": "Programs written in Mach."
