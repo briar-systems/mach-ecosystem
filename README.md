@@ -124,6 +124,7 @@ _Programs written in Mach._
 - [cellar](https://github.com/octalide/cellar) - Interactive cellular-automata editor and visualizer with weighted outer-totalistic kernels of any radius, multiple colour modes, and pattern saving.
 - [DOOMACH](https://github.com/NickDrohan/DOOMACH) - Port of the Doom engine and its shareware episode, with lockstep co-op and deathmatch over a relay, an OPL2 music synthesizer, and neural-network bots.
 - [machete](https://github.com/NickDrohan/machete) - UCI chess engine with a neural-network evaluation, named for what it does to a variation tree.
+- [Machfuck](https://github.com/Wmakes/Machfuck) - Brainfuck interpreter and compiler that builds native executables for any Mach target by transpiling to Mach.
 - [Ramjet](https://github.com/Wmakes/Ramjet) - Independent RAR-compatible archiver.
 
 ## Examples
