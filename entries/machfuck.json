@@ -1,6 +1,6 @@
 {
   "name": "Machfuck",
   "url": "https://github.com/Wmakes/Machfuck",
-  "description": "Brainfuck interpreter and native compiler.",
+  "description": "Brainfuck interpreter and compiler that builds native executables for any Mach target by transpiling to Mach.",
   "category": "apps"
 }
