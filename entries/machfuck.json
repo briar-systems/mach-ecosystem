@@ -1,0 +1,6 @@
+{
+  "name": "machfuck",
+  "url": "https://github.com/Wmakes/Machfuck",
+  "description": "Brainfuck interpreter and native compiler.",
+  "category": "apps"
+}
