@@ -48,6 +48,7 @@ _Plugins and extensions for editors._
 
 - [mach-vscode](https://github.com/briar-systems/mach-vscode) - Mach support for Visual Studio Code.
 - [mach-zed](https://github.com/briar-systems/mach-zed) - Mach support for Zed with syntax highlighting, indentation, and code outline.
+- [mach.vim](https://github.com/angluca/mach.vim) - Vim plugin for Mach language.
 
 ## Web
 
