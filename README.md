@@ -20,6 +20,7 @@ Browse it with search, sorting, and project details at [machlang.org/ecosystem](
 - [Media and assets](#media-and-assets)
 - [GUI](#gui)
 - [Game Dev](#game-dev)
+- [Emulation](#emulation)
 - [Simulation](#simulation)
 - [Operating systems](#operating-systems)
 - [Applications](#applications)
@@ -104,6 +105,12 @@ _Engines, frameworks, and game tooling._
 - [boom](https://github.com/briar-systems/boom) - 2D-first, 3D-capable game engine.
 - [mach-raylib](https://github.com/Angluca/mach-raylib) - Mach bindings for Raylib.
 - [mach-sdl](https://github.com/Wmakes/mach-sdl) - SDL3 bindings, with SDL3_ttf, SDL3_image and SDL3_mixer.
+
+## Emulation
+
+_Emulators, emulation APIs, and related tooling._
+
+- [mach-libretro](https://github.com/Wmakes/mach-libretro) - Native libretro bindings.
 
 ## Simulation
 

@@ -51,6 +51,11 @@
       "description": "Engines, frameworks, and game tooling."
     },
     {
+      "id": "emulation",
+      "title": "Emulation",
+      "description": "Emulators, emulation APIs, and related tooling."
+    },
+    {
       "id": "simulation",
       "title": "Simulation",
       "description": "Physics and other simulation."
@@ -290,6 +295,13 @@
       "url": "https://github.com/Wmakes/mach-sdl",
       "description": "SDL3 bindings, with SDL3_ttf, SDL3_image and SDL3_mixer.",
       "category": "games"
+    },
+    {
+      "id": "mach-libretro",
+      "name": "mach-libretro",
+      "url": "https://github.com/Wmakes/mach-libretro",
+      "description": "Native libretro bindings.",
+      "category": "emulation"
     },
     {
       "id": "mach-phys",
