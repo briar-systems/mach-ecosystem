@@ -1,0 +1,6 @@
+{
+  "name": "mach-libretro",
+  "url": "https://github.com/Wmakes/mach-libretro",
+  "description": "Native libretro bindings.",
+  "category": "emulation"
+}
