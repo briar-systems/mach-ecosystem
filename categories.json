@@ -51,6 +51,11 @@
       "description": "Engines, frameworks, and game tooling."
     },
     {
+      "id": "emulation",
+      "title": "Emulation",
+      "description": "Emulators, emulation APIs, and related tooling."
+    },
+    {
       "id": "simulation",
       "title": "Simulation",
       "description": "Physics and other simulation."
